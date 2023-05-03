@@ -61,6 +61,9 @@ $('#check_in').change(function(){
         var daysDiff = getDaysBetweenDates(check_in_value, check_out_value)
         nights.value = daysDiff
     }
+    setTimeout(() => {
+        $("#check_out").datepicker("show");
+    }, 1);
     // var nights_value = nights.value
 });
 
